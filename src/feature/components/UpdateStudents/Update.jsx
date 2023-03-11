@@ -16,7 +16,7 @@ import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 function Update() {
   const [studentList, setStudentList] = useState([]);
- 
+
   useEffect(() => {
     async function fetchUpdate() {
       const requestUrl = 'http://localhost:4000/api/categories'

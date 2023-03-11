@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import ClearIcon from '@mui/icons-material/Clear';
 import Typography from '@mui/material/Typography';
 import Search from '../Search/Search';
-import { filterItems } from '../../../contans/index'
+import { filterItems } from '../../../constants/index'
 
 BasicTable.propTypes = {
   lists: PropTypes.array,
@@ -58,7 +58,7 @@ function BasicTable(props) {
       console.log(lists)
       setLists([...lists])
     } catch (error) {
-      console.log("loi r ????", error);
+      console.log("loi r...", error);
     }
   };
 

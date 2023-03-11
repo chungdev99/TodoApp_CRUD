@@ -1,12 +1,9 @@
 import { Box, Grid } from '@mui/material';
 import React from 'react';
 import BasicList from '../BarLeft/BasicList';
+import Update from './Update';
 
-import AddList from './AddList';
-
-
-
-function AddList1() {
+function UpdateLayout() {
     return (
         <Box>
             <Grid container spacing={0}>
@@ -17,15 +14,14 @@ function AddList1() {
                     <Box sx={{
                         paddingTop: 1,
                         paddingBottom: 4,
-                        paddingLeft:4
+                        paddingLeft: 4
                     }}>
-                        <AddList />
+                        <Update />
                     </Box>
                 </Grid>
             </Grid>
-
         </Box>
     );
 }
 
-export default AddList1;
+export default UpdateLayout;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
@@ -9,7 +8,6 @@ function AddList() {
   const [email, setEmail] = useState('');
   const [gender, setGender] = useState('');
   const [teams, setTeams] = useState('');
-
 
   const hdlSearchNameChange = (event) => {
     setName(event.target.value);

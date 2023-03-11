@@ -4,7 +4,7 @@ import BasicList from '../BarLeft/BasicList';
 import About from './About';
 
 
-function About1() {
+function AboutLayout() {
     return (
         <Box>
             <Grid container spacing={0}>
@@ -21,9 +21,8 @@ function About1() {
                     </Box>
                 </Grid>
             </Grid>
-
         </Box>
     );
 }
 
-export default About1;
+export default AboutLayout;

@@ -32,7 +32,7 @@ function AddList() {
         gender: gender,
       }
       try {
-        const requestUrl = 'http://localhost:4000/api/categories'
+        const requestUrl = 'https://json-data-crud.vercel.app/api/categories'
         const response = await fetch(requestUrl, {
           method: "post",
           headers: {

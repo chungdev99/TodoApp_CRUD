@@ -1,17 +1,18 @@
-import { Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 import BasicList from '../BarLeft/BasicList';
 import About from './About';
+import Grid from '@mui/material/Unstable_Grid2';
 
 
 function AboutLayout() {
     return (
         <Box>
             <Grid container spacing={0}>
-                <Grid item xs={2}>
+                <Grid xs={7} sm={4} md={4} lg={3} >
                     <BasicList />
                 </Grid>
-                <Grid item xs={10}>
+                <Grid xs={8} sm={9} md={9} lg={6}>
                     <Box sx={{
                         paddingTop: 1,
                         paddingBottom: 4,

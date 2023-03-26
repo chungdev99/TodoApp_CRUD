@@ -6,16 +6,17 @@ import TodoList from '../TodoList/TodoList';
 export default function Calendar() {
     return (
         <Box>
-            <Grid container spacing={0} sx={{ flexGrow: 1 }} >
-                <Grid item xs={2} >
+            <Grid container spacing={0} >
+                <Grid xs={7} sm={4} md={4} lg={3} >
                     <BasicList />
                 </Grid>
-                <Grid item xs={10} >
+                <Grid xs={12} sm={12} md={12} lg={9} >
                     <Box sx={{
                         paddingTop: 1,
-                        paddingBottom: 3,
+                        paddingBottom: 4,
                         paddingLeft:4,
-                        background: '#CCCCCC'
+                        paddingRight: 4,
+                        backgroundColor: '#CCCCCC'
                     }}>
                         <TodoList />
                     </Box>

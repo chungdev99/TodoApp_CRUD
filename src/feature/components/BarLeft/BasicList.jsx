@@ -18,7 +18,7 @@ import styles from './basicList.module.scss'
 
 export default function BasicList() {
   return (
-    <Box className={styles.hidden} sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <Box className={styles.hidden} sx={{}}>
       <nav aria-label="main mailbox folders">
         <List>
           <Link to='/calendar' style={{

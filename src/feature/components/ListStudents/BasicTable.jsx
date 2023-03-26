@@ -47,7 +47,7 @@ function BasicTable(props) {
 
   async function hdlDeleteStudent(id , index) {
     try {
-      const requestUrl = (`https://json-data-crud.vercel.app/api/categories/${id}`);
+      const requestUrl = (`https://json-data-crud.vercel.app/categories/${id}`);
       const response = await fetch(requestUrl, {
         method: 'DELETE',
       });

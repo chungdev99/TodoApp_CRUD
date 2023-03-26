@@ -22,7 +22,7 @@ function Update() {
 
   useEffect(() => {
     async function fetchUpdate() {
-      const requestUrl = 'https://json-data-crud.vercel.app/api/categories'
+      const requestUrl = 'https://json-data-crud.vercel.app/categories'
       const response = await fetch(requestUrl);
       const responseJSON = await response.json();
       setStudentList(responseJSON);
@@ -46,7 +46,7 @@ function Update() {
     // };
     console.log(data);
 
-    const requestUrl = `https://json-data-crud.vercel.app/api/categories/${data.id}`
+    const requestUrl = `https://json-data-crud.vercel.app/categories/${data.id}`
     const response = await fetch(requestUrl, {
       method: "put",
       headers: {

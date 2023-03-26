@@ -32,7 +32,7 @@ function BasicTable(props) {
   useEffect(() => {
     async function fetchList() {
       try {
-        const requestUrl = 'http://localhost:4000/api/categories'
+        const requestUrl = 'https://json-data-crud.vercel.app/categories'
         const response = await fetch(requestUrl);
         const responseJSON = await response.json();
         console.log({ responseJSON });

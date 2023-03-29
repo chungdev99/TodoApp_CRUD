@@ -32,7 +32,7 @@ function BasicTable(props) {
   useEffect(() => {
     async function fetchList() {
       try {
-        const requestUrl = 'https://json-data-crud.vercel.app/categories'
+        const requestUrl = 'http://localhost:4000/api/categories'
         const response = await fetch(requestUrl);
         const responseJSON = await response.json();
         console.log({ responseJSON });
@@ -47,7 +47,7 @@ function BasicTable(props) {
 
   async function hdlDeleteStudent(id , index) {
     try {
-      const requestUrl = (`https://json-data-crud.vercel.app/categories/${id}`);
+      const requestUrl = (`http://localhost:4000/api/categories/${id}`);
       const response = await fetch(requestUrl, {
         method: 'DELETE',
       });

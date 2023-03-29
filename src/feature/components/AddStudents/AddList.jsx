@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import TextField from '@mui/material/TextField';
-import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+import TextField from '@mui/material/TextField';
+import React, { useState } from 'react';
 
 function AddList() {
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [gender, setGender] = useState('');
@@ -22,9 +23,8 @@ function AddList() {
     setGender(event.target.value);
   };
 
-  const hdlSubmitForm = (e) => {
-    e.preventDefault()
-    async function fetchAdd() {
+  const hdlSubmitForm =  async () => {
+    // e.preventDefault()
       let body = {
         name: name,
         email: email,
@@ -32,7 +32,7 @@ function AddList() {
         gender: gender,
       }
       try {
-        const requestUrl = 'https://json-data-crud.vercel.app/categories'
+        const requestUrl = 'http://localhost:4000/api/categories'
         const response = await fetch(requestUrl, {
           method: "post",
           headers: {
@@ -51,8 +51,7 @@ function AddList() {
       } catch (error) {
         console.log("loi r", error);
       }
-    }
-    fetchAdd();
+
   }
 
   const teamlist = ['Team 1', 'Team 2', 'Team 3', 'Team 4', 'Team 5'];
